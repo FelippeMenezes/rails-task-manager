@@ -1,15 +1,17 @@
 <div class= "container">
     <h1>Create new task</h1>
+    
+      <%= render "form", task: @task %>
 
-    <%= render "form", task: @task %>
+      <hr>
 
-    <hr>
-
-    <button type="button" class="btn btn-outline-primary">
+      <button type="button" class="btn btn-outline-primary">
+    
     
       <%= link_to tasks_path do %>
         Back to list
       <% end  %>
 
     </button>
+
 </div>
