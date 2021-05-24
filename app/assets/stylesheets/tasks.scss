@@ -3,36 +3,67 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 body {
-    background-color: #93c7ff;
+    background-image: url("https://images.unsplash.com/photo-1510070009289-b5bc34383727?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
     color: white;
 }
 
 .container {
-    padding: 24px;
-    }
+    font-family: 'Cabin Sketch', cursive;
+}
 
 h1 {
     text-shadow: 2px 2px #9b9b9b;
     border-radius: 5px;
-    background-color: rgb(224, 224, 224);
-    border-color: #007bff;
-    box-shadow: 5px 5px 5px #007bff;
+    background-color: rgb(64, 100, 44);
+    border: solid;
+    border-color: white;
+    box-shadow: 5px 5px 5px #6b6b6b;
+    width: fit-content;
+    padding: 20px;
+    margin-top: 56px;
+    margin-bottom: 28px;
+    color: white;
+    font-size: 62px;
+}
+
+h2 {
+    text-shadow: 2px 2px #9b9b9b;
+    border-radius: 5px;
+    background-color: rgb(64, 100, 44);
+    border: solid;
+    border-color: white;
+    box-shadow: 5px 5px 5px #6b6b6b;
     width: fit-content;
     padding: 20px;
     margin-top: 28px;
     margin-bottom: 28px;
-    color: #007bff;
+    color: white;
 }
 
 .card-task {
     padding: 10px;
     margin-top: 25px;
     border-radius: 5px;
-    background-color: rgb(224, 224, 224);
-    border-color: #007bff;
-    box-shadow: 5px 5px 5px #007bff;
+    background-color: rgb(64, 100, 44);
+    border: solid;
+    border-color: white;
+    box-shadow: 5px 5px 5px #6b6b6b;
     width: 300px;
-    color: #007bff;
+    color: white;
+    font-size: 18px;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.card-form {
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 5px;
+    background-color: rgb(64, 100, 44);
+    border: solid;
+    border-color: white;
+    box-shadow: 5px 5px 5px #6b6b6b;
+    width: 300px;
+    color: white;
 }
 
 .card-details {
@@ -40,11 +71,23 @@ h1 {
     justify-content: space-between;
 }
 
-.btn-outline-primary {
-    font-weight: bolder;
+a {
+    color: white;
+}
+.btn-outline-dark {
+    font-size: 30px;
 }
 
-.btn-outline-primary :hover {
+.btn-outline-dark :hover {
     text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+
+.fa-wrench {
+    color: white;
+}
+
+.fa-trash {
     color: white;
 }
