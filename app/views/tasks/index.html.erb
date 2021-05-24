@@ -1,7 +1,50 @@
-<h1>My Tasks</h1>
+<div class= "container">
+  <h1>My Tasks</h1>
+    <button type="button" class="btn btn-outline-primary">
+    
+      <%= link_to new_task_path do %>
+        Add a new Task here!
+      <% end  %>
 
-<ul>
+    </button>
   <% @tasks.each do |task| %>
-    <li><%= @task.title %></li>
+
+    <div class= "card-task" >
+
+      <div class= "card-details">
+
+        <div class= "info-title">
+
+        <% if task.completed %>
+          <i class="fas fa-check-square"></i>
+        <% else %>
+          <i class="fas fa-square"></i>
+        <% end %>
+
+        <%= task.title %>
+
+      </div>  
+
+      <div class= "link-card">
+
+          <%= link_to edit_task_path(task.id) do %>
+            <i class="fas fa-wrench"></i>
+          <% end %>
+      
+          <%= link_to task_path(task.id), method: :delete, data: { confirm: "Delete #{task.title}?" } do %>
+            <i class="fas fa-trash"></i>
+          <% end %>
+
+      </div>
+
+      </div>
+    
+      <hr>
+    
+      <li><%= task.details %></li>
+
+    </div> 
+
   <% end %>
-</ul>
+
+</div>
