@@ -6,10 +6,4 @@
 <p>Details: <%= @task.details%></p>
 <p>Completed: <%= @task.completed%></p>
 
-<%= link_to "Delete #{@task.title} task",
-  task_path(@task),
-  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
-%>
-<br>
-<br>
 <%= link_to "Back to all tasks", tasks_path %>

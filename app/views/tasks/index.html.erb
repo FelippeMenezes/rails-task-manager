@@ -1,8 +1,19 @@
 <h1>My Tasks</h1>
 <ul>
     <% @tasks.each do | task | %>
-        <li>Task: <%= link_to task.title, task_path(task) %> - Done: <%= task.completed %></li>
+        <ul>
+        <% if task.completed? %>
+          <i class="fa-solid fa-square-check"></i>
+        <% else %>
+          <i class="fa-regular fa-square"></i>
+        <% end %>
+        <%= link_to task.title, task_path(task), class: "task-title" %> -
+        <%= link_to task_path(task), data: { "turbo-method": :delete, "turbo-confirm": "Are you sure?" } do %>
+          <i class="fa-regular fa-trash-can"></i>
+        <% end %>
+        </ul>
     <% end %>
 </ul>
+<hr>
 
-<%= link_to "New Task", new_task_path %>
+<%= link_to "New Task", new_task_path, class: "btn btn-primary"%>

@@ -1,0 +1,18 @@
+h1 {
+    margin: 50px;
+    margin-top: 25px;
+}
+
+.task-title {
+    text-decoration: none;
+    color: black;
+}
+
+.fa-trash-can {
+    color: black;
+
+}
+
+.btn-primary {
+    margin-left: 50px;
+}
