@@ -1,18 +1,20 @@
-h1 {
-    margin: 50px;
-    margin-top: 25px;
-}
-
 .task-title {
     text-decoration: none;
     color: black;
+    font-weight: 600;
+    transition: color 0.2s ease-in-out
+}
+
+.task-title:hover {
+    color: blue;
+    font-weight: 600;
 }
 
 .fa-trash-can {
     color: black;
-
+    transition: color 0.2s ease-in-out;
 }
 
-.btn-primary {
-    margin-left: 50px;
+.fa-trash-can:hover  {
+    color: blue;
 }

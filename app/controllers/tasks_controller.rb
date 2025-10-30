@@ -23,7 +23,12 @@ class TasksController < ApplicationController
 
   def update
     @task.update(task_params)
-    redirect_to task_path(@task)
+    if params[:source] == 'edit_form'
+      redirect_to tasks_path
+    else
+      # For checkbox updates on index/show, redirect back to the same page.
+      redirect_back(fallback_location: tasks_path)
+    end
   end
 
   def destroy
